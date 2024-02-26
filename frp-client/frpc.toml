@@ -20,7 +20,7 @@ log.maxDays = 3
 # webServer.password = "123456789"
 
 [[proxies]]
-name = "your_name_proxy"
+name = "your_proxy_name"
 type = "http"
 customDomains = ["your_domain"]
 transport.useEncryption = true
