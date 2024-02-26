@@ -1,6 +1,6 @@
 name: "FRP Client"
 description: "You can use this tool to achieve remote access to local Home Assistant OS by port forwarding"
-version: "1.0.2"
+version: "1.0.2.1"
 slug: "frp_client"
 host_network: true
 startup: application
@@ -23,9 +23,10 @@ options:
   serverAddr: "example.com"
   serverPort: 7000
   authToken: "123456789"
-  #webServerPort: 7500
-  #webServerUser: "admin"
-  #webServerPassword: "123456789"
+  webServerActivate : 1
+  webServerPort: 7500
+  webServerUser: "admin"
+  webServerPassword: "123456789"
   customDomain: "example.com"
   proxyName: "homeassistant"
 schema:
@@ -33,8 +34,9 @@ schema:
   serverAddr: str
   serverPort: int
   authToken: str
-  #webServerPort: int
-  #webServerUser: str
-  #webServerPassword: str
+  webServerActivate : bool
+  webServerPort: int
+  webServerUser: str
+  webServerPassword: str
   customDomain: str
   proxyName: str
